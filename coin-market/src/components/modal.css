@@ -1,0 +1,108 @@
+.more-info{
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#fff;
+    width: 500px;
+    height: 300px;
+    box-shadow:  0 5px 30px rgba(0,0,0, .9);
+    padding: 5px;
+    transition: 1s ease-out;
+}
+
+.prime-data{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.prime-data button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.prime-data button:hover{
+    transform: rotate(180deg);
+}
+.more-info .image{
+    margin: 0 8px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    border-radius: 50%; 
+    background-color: #fff;
+} 
+.more-info .name{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.more-info .symbol{
+    font-size: 13px;
+    color: rgb(172, 151, 151);
+    height: 12px;
+}
+.data-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;   
+}
+.data-row div{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.data-row #title{
+    margin-bottom: 15px;
+    font-weight:initial
+}
+.active{
+    overflow-y: hidden;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+@media screen and (max-width:530px) {
+    .more-info{
+        width: 85%;
+        height: 50%;
+    }
+    .data-row{
+        text-align: center;
+    }
+}
+@media screen and (max-width:380px) {
+    .data-row{
+        font-size: 15px;
+    }
+    .data-row div{
+        width: 45%;
+    }
+}

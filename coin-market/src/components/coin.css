@@ -1,0 +1,209 @@
+.coin-list{
+   display: flex;
+   background-color: #fff;
+   border-radius: 8px;
+   margin: 2px 0;
+   padding: 0 10px;
+   color: black;
+   height: 80px;
+   width: 85%; 
+   font-size: 15px;
+   font-weight: bold;
+   transition: 0.2s ease-out;
+}
+.coin-list:hover{
+    transform: scale(1.01);
+}
+.coin-row{
+    width: 100%;
+    display: flex;
+}
+.coin{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin-left: 5px;
+    line-height: 20px;
+}
+.coin .image{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    border-radius: 50%; 
+}
+.image img{
+    width: 40px;
+}
+.coin .name{
+    margin-left: 5%;
+    font-size: 15px;
+}
+.coin .symbol{
+    margin-left: 5%;
+    font-size: 13px;
+    color: rgb(172, 151, 151);
+}
+.coin-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+.price{
+    width: 10%;
+    text-align: end;
+}
+.coin-green{
+    color: green;
+    margin-left: 8%;
+    width: 10%;
+    text-align: end;
+}
+.coin-red{
+    color: red;
+    margin-left: 8%;
+    width: 10%;
+    text-align: end;
+}
+.Market-cap{
+    margin-left: 8%;
+    width: 20%;
+    text-align: end;
+}
+.volume{
+    margin-left: 8%;
+    width: 20%;
+    text-align: end;
+}
+.btn-info{
+    margin-left: 4%;
+    width: 5%;
+    text-align: end;
+}
+.btn-info button{
+    background-color: #2C5364;
+    padding: 0 7px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #2C5364;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.btn-info button:hover{
+    color: #2C5364;
+    background-color: white;
+}
+
+/* Media queries */
+
+@media  screen and (max-width:970px) {
+   
+    .coin .symbol{
+        display: none;
+    }
+}
+
+@media screen and (max-width:852px) {
+    .Market-cap{
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width:796px){
+    .coin-list{
+        width: 55%;
+        height: 200px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+    }
+    .coin-row{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        height: 100%;
+    }
+    .coin{
+        width: 100%;
+    }
+    .coin .symbol{
+        display: block;
+    }
+    .coin-data{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px;
+    }
+    .price, .coin-green, .coin-red, .Market-cap, .volume{
+        width: 100%;
+        text-align: start;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+    .price::before{
+        content: 'Price : ';
+        font-weight: initial;
+        margin-right: 5px;
+    }
+
+    .coin-red::before, .coin-green::before{
+        content: 'Var(24h) : ';
+        color: black;
+        font-weight: initial;
+        margin-right: 5px;
+    }
+    .Market-cap::before{
+        content: 'Market cap : ';
+        font-weight: initial;
+        margin-right: 5px;
+    }
+    .volume::before{
+        content: 'Volume : ';
+        font-weight: initial;
+        margin-right: 5px;
+    }
+    .btn-info{
+        position: absolute;
+        right: 2%;
+        bottom: 5%;
+    }
+}
+
+ @media screen and (max-width:670px){
+     .Market-cap::before{
+        content: 'Mkt cap : ';
+    }
+    .volume::before{
+        content: 'Vol : ';
+    } 
+    .coin-list{
+        width: 70%;
+        margin: 5px;
+        height: 40%
+    }
+    .coin-data{
+        width: 85%;
+        padding: 2px;
+    } 
+
+}
+@media screen and (max-width:422px){
+    .coin-list{
+        font-size: 15px;
+        width: 80%;
+    }
+    .btn-info{
+        margin-right: 2%;
+    }
+}
+
+
+
+
+
+
+

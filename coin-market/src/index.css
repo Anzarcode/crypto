@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: linear-gradient(to right, #0f0c29, #302b63, #2C5364);
+}
+.coin-bord{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  font-family: 'Comfortaa', cursive;
+}
+nav{
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 80px;
+}
+nav input{
+  width: 250px;
+  height: 35px;
+  margin-top: 30px;
+  padding: 0 5px;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.mdSearch{
+  position: absolute;
+  bottom: 5px;
+  right: 6px;
+  color: #302b63;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btn-remove{
+  color: #302b63;
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+.inputSearch{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+nav h2{
+  font-family: 'Rampart One', cursive;
+  font-size: clamp(30px, 5vw, 35px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gold;
+}
+.contact{
+  position: absolute;
+  top: 18%;
+  right: 3%;
+  height: 30px;
+  line-height:0;
+  font-size: 27px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s ease-out;
+}
+.contact:hover{
+  transform: scale(1.2);
+}
+.title{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 85%;
+  height: 40px;
+  margin-bottom: 5px;
+  
+}
+.title-row{
+  display: flex;
+  width: 100%;
+}
+.title p:nth-child(1){
+  width: 20%;
+  text-align: center;
+}
+.title p:nth-child(2){
+  margin-left: 2%;
+  width: 15%;
+  text-align: center;
+}
+.title p:nth-child(3){
+  width: 11%;
+  text-align: end;
+}
+.title p:nth-child(4){
+  width: 20%;
+  text-align: end;
+}
+.title p:nth-child(5){
+  
+  width: 22%;
+  text-align: end;
+}
+
+@media screen and (max-width:852px){
+  .title p:nth-child(3){
+    width: 13%;
+  }
+}
+@media screen and (max-width:796px){
+  .title{
+    display: none;
+  }
+}
+@media screen and (max-width:422px){
+  .inputSearch{
+    margin-right: 15px;
+  }
+  .contact{
+    position: absolute;
+    top: 77%;
+    right: 5%;
+    font-size: 25px;
+  }
+}
+

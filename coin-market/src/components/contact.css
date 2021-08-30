@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.overlay{
+    position: fixed;
+    height: 100vh;
+    background: rgba(0,0,0, .7);
+}
+.contactWindow{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 35%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactWindow h2{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 3%;
+}
+.btn-close{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.btn-close:hover{
+    transform: rotate(180deg);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 90%;
+}
+.formulaire{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formulaire input{
+    height: 40px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #ececec;
+    outline: none;
+    border: none
+}
+.formulaire textarea{
+    padding: 7px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+.formulaire textarea::-webkit-scrollbar-track{
+    background: red;
+    }
+
+.btn-submit{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    width: 35%;
+    padding: 8px 12px;
+    border: 2px solid rgb(240, 54, 54);
+    border-radius: 12px;
+    background-color: rgb(240, 54, 54);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.btn-submit:hover{
+    color: rgb(240, 54, 54);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1100px){
+    .contactWindow{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 790px){
+    .contactWindow{
+        width: 75%;
+    }
+}
+@media screen and (max-width:490px){
+    .contactWindow{
+        width: 90%;
+    }
+}
