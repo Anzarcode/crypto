@@ -194,7 +194,10 @@
 @media screen and (max-width:422px){
     .coin-list{
         font-size: 15px;
-        width: 80%;
+        width: 85%;
+    }
+    .coin-data{
+        width: 100%;
     }
     .btn-info{
         margin-right: 2%;

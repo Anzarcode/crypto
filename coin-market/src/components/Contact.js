@@ -9,7 +9,7 @@ function Contact({handleContact}) {
                 <h2>Contact Us</h2>
                 <button className='btn-close' onClick={()=>handleContact(false)}>&#10006;</button>
 
-                <form action="https://formsbmit.co/mail" method='POST'>
+                <form action="https://formsbmit.co/moufid.sgh@gmail.com" method='POST'>
                     <div className='formulaire'>
                         <input type='text' name='name' placeholder='Name' required/> 
                         <input type='email' name='email' placeholder='Email' required/>

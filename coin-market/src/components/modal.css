@@ -98,11 +98,33 @@
         text-align: center;
     }
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:422px) {
+    .more-info{
+        height: 65%;
+    }
+    .prime-data{
+        line-height: 28px;
+    }
+    .more-info .symbol{
+        position: absolute;
+        top: 45px;
+        right: 15px;
+    }
     .data-row{
         font-size: 15px;
+        height: 80%;
     }
     .data-row div{
-        width: 45%;
+        width: 47%;
+        height: 30%;
+        margin: 3px;
     }
+    .data-row div:nth-child(1) { order : 1}
+    .data-row div:nth-child(2) { order : 3}
+    .data-row div:nth-child(3) { order : 5}
+    .data-row div:nth-child(4) { order : 2}
+    .data-row div:nth-child(5) { order : 4}
+    .data-row div:nth-child(6) { order : 6}
+    
+   
 }
