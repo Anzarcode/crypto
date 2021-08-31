@@ -10,7 +10,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #fff;
-    width: 35%;
+    width: 40%;
     height: 80%;
     border-radius: 5px;
     display: flex;
@@ -41,43 +41,38 @@ form{
     align-items: center;
     width: 70%;
     height: 90%;
-    margin-top: 15%;
 }
 .formulaire{
     width: 100%;
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin-top: 10%;
 }
 .formulaire input{
     height: 40px;
     padding: 7px;
-    margin-bottom: 10%;
     border-radius: 5px;
     background-color: #ececec;
     outline: none;
-    border: none
+    border: none;
+    margin-bottom: 15px;
 }
 .formulaire textarea{
     padding: 7px;
-    margin-bottom: 10%;
+    margin-top: 15px;
     resize: none;
     outline: none;
     border: none;
     border-radius: 5px;
     background-color: #ececec;
 }
-.formulaire textarea::-webkit-scrollbar-track{
-    background: red;
-    }
-
 .btn-submit{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     width: 35%;
     padding: 8px 12px;
-    margin-top: 10%;
+    margin-top: 7%;
     border: 2px solid rgb(240, 54, 54);
     border-radius: 12px;
     background-color: rgb(240, 54, 54);
@@ -90,6 +85,9 @@ form{
     color: rgb(240, 54, 54);
     background-color: #fff;
 }
+.active{
+    overflow-y: hidden;
+}
 
 @media screen and (max-width: 1100px){
     .contactWindow{
@@ -98,14 +96,30 @@ form{
 }
 @media screen and (max-width: 790px){
     .contactWindow{
-        width: 75%;
+        width: 85%;
+        height: 60%;
     }
 }
-@media screen and (max-width:490px), (orientation:landscape){
+@media screen and (max-width:490px){
     .contactWindow{
-        width: 90%;
+        height: 75%;
+        
     }
     form{
         width: 85%;
+    }
+    .btn-submit{
+        margin-top: 11%;
+    }
+}
+@media screen and (max-width:900px) and (orientation: landscape){
+    .contactWindow{
+        height: 90%;
+    }
+    .formulaire{
+        margin-top: 5%;
+    }
+    .btn-submit{
+        margin-top: 4%;
     }
 }

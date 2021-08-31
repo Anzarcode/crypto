@@ -80,7 +80,8 @@ function App() {
       </div>
       
         {
-          contactWindow && <Contact handleContact={handleContact}/>
+          contactWindow && <Contact handleContact={handleContact} 
+                                    contactWindow={contactWindow}/>
         }
 
     </div>

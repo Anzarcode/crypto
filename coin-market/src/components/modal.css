@@ -3,6 +3,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    border-radius: 7px;
     transform: translate(-50%, -50%);
     background-color:#fff;
     width: 500px;
@@ -58,7 +59,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 70%;   
+    height: 70%;  
+    padding: 2px; 
 }
 .data-row div{
     width: 32%;

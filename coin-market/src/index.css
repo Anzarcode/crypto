@@ -136,5 +136,8 @@ nav h2{
     right: 5%;
     font-size: 26px;
   }
+  .btn-remove{
+    color: #302b63;
+  }
 }
 
