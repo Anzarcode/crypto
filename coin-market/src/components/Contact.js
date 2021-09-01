@@ -20,6 +20,7 @@ function Contact({handleContact, contactWindow}) {
                 <form action="https://formsubmit.co/moufid.sgh@gmail.com" method='POST'>
                     <div className='formulaire'>
                         <input type='text' name='name' placeholder='Name' required/> 
+                        <input type="hidden" name="_next" value="https://crypto-cost.netlify.app/"></input>
                         <input type='email' name='email' placeholder='Email' required/>
                         <textarea rows ='12' cols='20' placeholder='Message...' required></textarea>
                     </div>
